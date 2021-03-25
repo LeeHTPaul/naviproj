@@ -2,10 +2,10 @@ import * as React from 'react';
 import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { HomeScreen } from "./screens/HomeScreen";
-import { EventsScreen } from "./screens/EventsScreen";
-import { ContactScreen } from "./screens/ContactScreen";
-import Ionicons from "react-native-vector-icons/Ionicons"
+import  HomeScreen  from "./screens/HomeScreen";
+import  EventsScreen  from "./screens/EventsScreen";
+import  ContactScreen  from "./screens/ContactScreen";
+import Ionicons from "react-native-vector-icons/Ionicons";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
 
 const Tab = createBottomTabNavigator();
