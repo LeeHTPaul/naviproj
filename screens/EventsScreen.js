@@ -1,17 +1,20 @@
 import * as React from "react";
-import { Text, View, Button } from "react-native";
+import { Text, View, Button, StyleSheet, TouchableOpacity } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 
 function EventsHomeScreen( {navigation} ) {
     return (
         <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
             <Text> Events first Page!! </Text>
+            <Text> </Text>
             <Button
                 onPress={() => navigation.navigate("EventsSecond")}
                 title="Second Screen" ></Button>
-            <Button
-                onPress={() => navigation.navigate("EventsThird")}
-                title="Third Screen" ></Button>
+            <Text> </Text>
+            <Button onPress={() => navigation.navigate("EventsThird")} 
+                title="Third Screen">
+               </Button>
+                
         </View>
     );
 }
@@ -45,3 +48,28 @@ export default function EventsScreen() {
 
     );
   }
+
+  const styles = StyleSheet.create({
+ 
+    button:{
+      backgroundColor: "red",
+      padding: 20,
+      borderRadius: 10,
+      marginTop: 20,
+      marginLeft: 60,
+      marginRight: 60,
+    },
+  
+    buttonText: {
+      color: "white",
+      fontWeight: "bold",
+      fontSize: 20,
+    },
+
+    text: {
+        color: "white",
+        fontWeight: "bold",
+        fontSize: 20,
+      },
+    })
+  
